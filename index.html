@@ -30,6 +30,15 @@ alert("HI YES IM WORKING I EXIST")
 
 function luh() {
 	alert('luh luh luh luh 2')
+	        // Start listening for device orientation and motion
+        startOrientationListener();
+        
+        // Request permission and set up device motion listener
+        if (window.DeviceMotionEvent) {
+            window.addEventListener("devicemotion", handleMotion);
+        } else {
+            alert("Device Motion is not supported on this device or browser.");
+        }
 }
 
         // Set canvas size to fit the window
@@ -143,16 +152,6 @@ function luh() {
             // Apply decay to speed
             speed -= 0.1 * speed; // Reduces speed gradually
             if (speed < 0) speed = 0; // Prevent negative speed
-        }
-
-        // Start listening for device orientation and motion
-        startOrientationListener();
-        
-        // Request permission and set up device motion listener
-        if (window.DeviceMotionEvent) {
-            window.addEventListener("devicemotion", handleMotion);
-        } else {
-            alert("Device Motion is not supported on this device or browser.");
         }
 
     </script>
