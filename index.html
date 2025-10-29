@@ -30,6 +30,7 @@ alert("HI YES IM WORKING I EXIST")
 
 function luh() {
 	alert('luh luh luh luh 2')
+	try {
 	        // Start listening for device orientation and motion
         startOrientationListener();
         
@@ -39,6 +40,9 @@ function luh() {
         } else {
             alert("Device Motion is not supported on this device or browser.");
         }
+	} catch (error) {
+		alert(error)
+	}
 }
 
         // Set canvas size to fit the window
