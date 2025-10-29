@@ -151,6 +151,10 @@ function luh() {
             alert("Device Motion is not supported on this device or browser.");
         }
 
+		window.onerror = function(msg, url, line){
+  			alert(`Error: ${msg}\nLine: ${line}`);
+		}
+
     </script>
 </body>
 </html>
