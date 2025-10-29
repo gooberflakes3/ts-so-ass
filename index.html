@@ -19,6 +19,10 @@
     <img src="smile.jpg" alt="ts SO ASSSSSS" />
     <canvas id="canvas" width="800px" height="500px"></canvas>
     <script>
+		window.onerror = function(msg, url, line){
+  			alert(`Error: ${msg}\nLine: ${line}`);
+		}
+		
                 const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext('2d');
 
@@ -150,10 +154,6 @@ function luh() {
         } else {
             alert("Device Motion is not supported on this device or browser.");
         }
-
-		window.onerror = function(msg, url, line){
-  			alert(`Error: ${msg}\nLine: ${line}`);
-		}
 
     </script>
 </body>
