@@ -3,6 +3,10 @@
 
 alert("HI YES IM WORKING I EXIST")
 
+function luh() {
+	alert('luh luh luh luh 2')
+}
+
         // Set canvas size to fit the window
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
